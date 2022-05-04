@@ -1,0 +1,477 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracey's Transactional Email Template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        :root {
+            --darkgrey: #4a4a4a;
+            --clr-main:#cecdcd;
+        }
+        body {
+            margin: 0;
+            background-color: #ededed;
+        }
+        table {
+            border-spacing:0;
+        }
+        td {
+            padding: 0;
+        }
+        img {
+            border: 0;
+        }
+        .wrapper {
+            width: 100%;
+            table-layout: fixed;
+            background-color: #ededed;
+            padding-bottom: 60px;
+            
+        }
+        .container {
+            background-color: #ffffff;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 600px;
+            /* get rid of inherent spacing around edges from some MS email clients */
+            border-spacing: 0;
+            font-family: sans-serif;
+            color: var(--darkgrey);
+            padding: 20px;
+            line-height: 25px;
+        }
+        .main {
+            border: 10px var(--clr-main) solid;
+            /* box-shadow:0 0 25px rgba(0,0,0,.5); */
+        }
+        a {
+            text-decoration: none;
+            color: var(--darkgrey);
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .sm-bold {
+            font-weight: bold;
+            font-size:14px;
+        }
+        .underline {
+            text-decoration:underline;
+        }
+        .center {
+            text-align: center;
+        }
+        .right {
+            text-align:right;
+        }
+        h1 {
+            margin:0;
+            padding:0;
+            font-size: 22px;
+            color: var(--darkgrey);
+        }
+        .spc2 {
+            line-height: 40px;
+        }
+        .button {
+            padding: 15px 100px;
+            border-radius: 10px;
+            background-color: black;
+            color: #ffffff;
+        }
+        .red {
+            color: red;
+        }
+        .center {
+            text-align: center;
+        }
+        .credit {
+            padding: 0px 100px;
+        }
+        @media(max-width:550px){
+            .four-columns {
+                display:block;
+                text-align:center;
+            } 
+            .four-columns img {
+                width: 150px;
+            }
+            .button {
+                padding: 15px 80px;
+            }
+            .two-columns {
+                display:block;
+            }
+            .credit {
+                padding:0 60px;
+            }
+            .column {
+                display: block;
+                text-align: center;
+            }
+            .column img {
+                padding-bottom: 30px;
+            }
+         }    
+         @media(max-width:450px) {
+            .main {
+                padding: 0;
+            }
+            .container {
+                padding: 5px;
+            }
+         }
+    </style>
+    
+</head>
+<body>
+
+
+    <center class="wrapper">
+
+<!-- LOGO & NAVBAR -->
+    <table class="main container">
+        <tr>
+            <td>
+                <table class="container" width="100%">
+                    <tr>
+                        <td>
+                            <a href=""><img width="150px" src="https://i.ibb.co/7GSYy1n/logo.jpg" alt=""></a>
+                        </td>
+                        <td class="center"><a href="">CLOTHES</a></td>
+                        <td class="center">   |   </td>  
+                        <td class="center"><a href="">SHOES</a></td>
+                        <td class="center">   |   </td> 
+                        <td class="center"><a href="">SALE</a></td>
+                    </tr>
+                </table>
+        
+<!-- DELIVERY INFO --> 
+                <table class="container" width=""100%>  
+                    <tr>
+                        <td><h1>Thanks for your order!</h1></td>
+                    </tr>
+                    <tr>
+                        <td class="bold spc2">Hi Brian,</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-bottom:30px">We hope you enjoyred shopping with us!</td>
+                    </tr>
+                    <tr class="bold">
+                        <td>Delivery Address</td>
+                        <td class="right">Order n*</td>
+                    </tr>
+                    <tr>
+                        <td>Brian, Thompson</td>
+                        <td class="bold underline right">0019010367440</td>
+                    </tr>
+                    <tr>
+                        <td>10101 10 Mile Rd.</td>
+                        <td class="bold right">Order Date</td>
+                    </tr>
+                    <tr>
+                        <td>Southfield, MI, 48075</td>
+                        <td class="right">Mon May 1, 2022</td>
+                    </tr>
+                </table>
+        
+ <!-- ITEMS ORDERED -->
+                <table class="container" width="100%">
+                    <tr>
+                        <td class="bold">Your Macy's Items</td>
+                    </tr>
+                    <tr>
+                        <td height="2px" style="background-color:var(--darkgrey);"></td>
+                    </tr>
+                </table>
+
+                <table class="container" width="100%" style="padding-top:0px;">
+                    <tr>
+                        <td>Standard Delivery</td>
+                    </tr>
+                    <tr>
+                        <td class="bold">Thurs, May 4 2022 - Mon, May 8 2022</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img width="150px" src="https://i.ibb.co/WcY4yWK/item.jpg" alt="">
+                        </td>
+                        <td>
+                            <table class="container" width="100px" style="padding:0;">
+                                <tr>
+                                    <td class="bold">Nike</td>
+                                </tr>
+                                <tr>
+                                    <td>Men's AIR MAX Goaterra 2.0 Boots from Finish Line</td>
+                                    <td class="bold right">$78.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Size: 10.5</td>
+                                </tr>
+                                <tr>
+                                    <td>Quantity: 1</td>
+                                    <td width="60%"class="bold right">
+                                        <a href="" class="underline">Complete the look ></a>
+                                    </td>
+                                </tr>
+                            </table>         
+                        </td>
+                    </tr>
+                </table>
+
+<!-- PAYMENT METHOD -->
+                <table class="container" width="100%">
+                    <tr>
+                        <td height="2px" style=" background-color:var(--darkgrey);"></td>
+                    </tr>
+                </table>
+                <table class="container" width="100%" style="padding-top:0;">
+                    <tr>
+                        <td>Payment method</td>
+                        <td class="right">Credit Card</td>
+                    </tr>
+                    <tr>
+                        <td>Sub Total</td>
+                        <td class="right">$78.00</td>
+                    </tr>
+                    <tr>
+                        <td>Shipping Fine</td>
+                        <td class="right">Free</td>
+                    </tr>
+                    <tr>
+                        <td class="bold">Total</td>
+                        <td class="bold right">$78.00</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-top:50px;"><a class="button" href="" alt="View Order">View Order</a></td>
+                    </tr>
+                    <tr style="color:rgb(174, 172, 172);">
+                        <td style="padding:15px 0;">Login required</td>
+                    </tr>
+                    <tr>
+                        <td class="bold">Changed your mind?</td>
+                    </tr>
+                    <tr>
+                        <td>We can't make you change your order, but with Standard Delivery you have one hour to 
+                            <span class="bold underline">
+                                <a href="" alt="Cancel It">cancel it</a>
+                            </span>.
+                        </td>
+                    </tr>
+                </table>
+                
+<!-- FOUR COLUMNS -->
+                <table class="container" width="100%">
+                    <tr>
+                        <td height="2px" style="background-color:var(--darkgrey);"></td>
+                    </tr>
+                    <tr>
+                        <td><h1 class="four-columns" style="padding-top:30px;">You Might Like</h1></td>
+                    </tr>
+                </table>
+
+                <table class="container" width="100%">
+                        <tr>
+                            <td class="four-columns">
+                                <table width="100%">
+                                    <tr>
+                                        <td>
+                                            <a href=""><img width="100px;" src="https://i.ibb.co/4mKNqcF/shoe1.jpg" alt=""></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <table width="100%">
+                                                <tr>
+                                                    <td class="bold red">$65.95</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sm-bold">$75.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Nike</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="bold underline"><a href="">Shop now</a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>         
+                            </td>
+                            <td class="four-columns">
+                                <table width="100%">
+                                    <tr>
+                                        <td>
+                                            <a href=""><img width="100px;" src="https://i.ibb.co/j8FNySv/shoe2.jpg" alt=""></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <table width="100%">
+                                                <tr>
+                                                    <td class="bold red">$65.95</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sm-bold">$75.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Nike</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="bold underline"><a href="">Shop now</a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>         
+                            </td>
+                            <td class="four-columns">
+                                <table width="100%">
+                                    <tr>
+                                        <td>
+                                            <a href=""><img width="100px;" src="https://i.ibb.co/LJ41k6b/shoe3.jpg" alt=""></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <table width="100%">
+                                                <tr>
+                                                    <td class="bold red">$65.95</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sm-bold">$75.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Nike</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="bold underline"><a href="">Shop now</a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>         
+                            </td>
+                            <td class="four-columns">
+                                <table width="100%">
+                                    <tr>
+                                        <td>
+                                            <a href=""><img width="100px;" src="https://i.ibb.co/KXgbDxc/shoe4.jpg" alt=""></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <table width="100%">
+                                                <tr>
+                                                    <td class="bold red">$65.95</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sm-bold">$75.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Nike</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="bold underline"><a href="">Shop now</a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>         
+                            </td>
+                        </tr>
+                    <tr>
+                        <td style="padding-top:50px;">Best wishes,</td>
+                    </tr>
+                    <tr>
+                        <td class="bold">Your Macy's Team</td>
+                    </tr>
+                </table>
+                </td>
+            </tr>
+        </table>
+<!-- FOOTER SECTION -->
+        <table class="footer">
+            
+        </table>
+        <table class="container" width="100%" style="padding: 60px 20px 0 30px; color: #f6f6f6;background-color:#4a4a4a; text-align: center; font-weight: bold;">
+            <tr>
+                <td>Connect With Us</td>
+            </tr>
+        </table>
+        <table class="container" width="100%" style="text-align: center; color: #f6f6f6;background-color:#4a4a4a; padding: 30px 100px 40px 100px;">
+            <tr>
+                <td><img width="40px" src="https://i.ibb.co/6sxVDB0/circle-facebook.png" alt=""></td>
+                <td><img width="40px" src="https://i.ibb.co/71Lgdv7/circle-instagram.png" alt=""></td>
+                <td><img width="40px" src="https://i.ibb.co/xg66G73/circle-twitter.png" alt=""></td>
+                <td><img width="40px" src="https://i.ibb.co/j6nTz9J/circle-youtube.png" alt=""></td>
+            </tr>
+        </table>
+
+        <table class="container" width="100%" style="color: #f6f6f6;background-color:#4a4a4a; padding: 10px 100px 20px 100px;">
+            <tr>
+                <td height="1px" style="background-color:#f6f6f6; padding:0;"></td>
+            </tr>
+        </table>
+
+        <table class="container" width="100%" style="color: #f6f6f6;background-color:#4a4a4a;">
+            <tr>
+                <td style="text-align: center; padding-top: 10px;">Open A Macy's Card & Get 20% Off</td>
+            </tr>
+        </table>
+
+        <table class="credit container" width="100%" style="color: #f6f6f6;background-color:#4a4a4a;">
+            <tr>
+                <td class="column"><a href=""><img width="120px" src="https://i.ibb.co/TkTX9wB/credit-card.jpg" alt=""></a></td>
+                <td class="column" style="padding-left: 20px;font-size: 12px;">Today and tomorrow,* up to a total savings of $100 on your Macy's purchases over the 2 days. *Subject to credit approval. <span><a style="color:#f6f6f6; text-decoration: underline;" href="">Details</a></span></td>
+            </tr>
+        </table>
+
+        <table class="container" width="100%" style="color: #f6f6f6;background-color:#4a4a4a; padding: 40px 100px 50px 100px;">
+            <tr>
+                <td height="1px" style="background-color:#f6f6f6; padding:0;"></td>
+            </tr>
+        </table>
+
+        <table class="container" width="100%" style="text-align: center; color: #f6f6f6;background-color:#4a4a4a; table-layout: fixed; font-size:14px; padding-bottom:0;">
+            <tr>
+                <td>
+                    <a style="color:#f6f6f6;" href="">Customer Service</a>
+                </td>
+                <td>   |   </td>
+                <td>
+                    <a style="color:#f6f6f6;" href="">Macy's Credit Card</a>
+                </td>
+                <td>   |   </td>
+                <td>
+                    <a style="color:#f6f6f6;" href="">Stores & Services</a>
+                </td>
+                <td>   |   </td>
+                <td>
+                    <a style="color:#f6f6f6;" href="">Macy's Inc.</a>
+                </td>
+            </tr>
+        </table>
+
+        <table class="container" width="100%" style="text-align: center; color: #ffffff;background-color:#4a4a4a;">
+            <tr>
+                <td style="font-size: 12px;">
+                    © 2022 Macy’s. All rights reserved. Macys.com, LLC, 151 West 34th Street, New York, NY 10001. Request our corporate name & address by email.
+                </td>
+            </tr>
+        </table>
+
+    </center>
+</body>
+</html>
+
+
+
